@@ -1,0 +1,4 @@
+name: zmk-keyboard-theduplex
+build:
+  settings:
+    board_root: .
