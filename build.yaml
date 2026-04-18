@@ -22,8 +22,7 @@ include:
 
   - board: seeeduino_xiao_ble
     shield: theduplex_left
-  - board: seeeduino_xiao_ble
-    shield: hummingbird rgbled_adapter
+
 ## To build with ZMK Studio support, uncomment the following block
 ## by removing the leading '#' from each line.
 
