@@ -38,6 +38,6 @@ include:
 
   - board: seeeduino_xiao_ble
     shield: settings_reset
-
-     - board: xiao_ble//zmk
+include:
+  - board: xiao_ble//zmk
     shield: hummingbird rgbled_adapter
