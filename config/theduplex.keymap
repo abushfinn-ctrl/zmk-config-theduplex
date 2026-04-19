@@ -8,11 +8,21 @@
         default_layer {
             display-name = "Base";
             bindings = <
-&kp NUMBER_1      &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp N5                  &kp NUMBER_6           &kp N9     &kp N7      &kp N9  &mt N0 BACKSPACE
-&kp TAB           &kp Q         &kp W         &kp E         &kp R                   &kp T                  &kp I      &kp U       &kp Y   &kp O
-&lt 0 CAPS        &kp A         &kp S         &kp D         &kp F                   &kp G                  &kp K      &kp J       &kp H   &kp L
-&mt LEFT_SHIFT Z  &kp X         &kp C         &kp V         &kp B                   &kp N                  &kp COMMA  &kp PERIOD  &kp M   &kp SLASH
-                                                            &mt LEFT_SHIFT SPACE    &mt RIGHT_SHIFT SPACE
+&kp NUMBER_1      &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4    &kp N5                  &kp NUMBER_6           &kp N9      &kp N8     &kp N7  &mt N0 BACKSPACE
+&kp TAB           &kp Q         &kp W         &kp E           &kp R                   &kp T                  &kp I       &kp U      &kp Y   &kp O
+&lt 1 CAPS        &kp A         &kp S         &kp D           &kp F                   &kp G                  &kp K       &kp J      &kp H   &kp L
+&mt LEFT_SHIFT Z  &kp X         &mt LCTRL C   &mt LEFT_ALT V  &mt LEFT_GUI B          &kp N                  &kp PERIOD  &kp COMMA  &kp M   &kp SLASH
+                                                              &mt LEFT_SHIFT SPACE    &mt RIGHT_SHIFT SPACE
+            >;
+        };
+
+        layer_1 {
+            bindings = <
+&kp ESCAPE  &trans  &trans  &trans  &trans    &trans  &trans             &trans          &kp MINUS         &kp EQUAL
+&kp GRAVE   &trans  &trans  &trans  &trans    &trans  &kp RIGHT_BRACKET  &kp BACKSLASH   &kp LEFT_BRACKET  &kp P
+&trans      &trans  &trans  &trans  &trans    &trans  &kp UP_ARROW       &trans          &trans            &kp ENTER
+&trans      &trans  &trans  &trans  &trans    &trans  &kp DOWN           &kp LEFT_ARROW  &trans            &kp RIGHT
+                                    &trans    &trans
             >;
         };
     };
