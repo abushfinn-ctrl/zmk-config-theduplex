@@ -2,10 +2,26 @@
 #include <dt-bindings/zmk/keys.h>
 
 / {
+    combos {
+        compatible = "zmk,combos";
+
+        layer {
+            bindings = <&to 2>;
+            key-positions = <40 0>;
+            layers = <0>;
+        };
+
+        layer0 {
+            bindings = <&tog 0>;
+            key-positions = <40 0>;
+            layers = <2>;
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
-        default_layer {
+        layer1 {
             display-name = "Base";
             bindings = <
 &kp NUMBER_1      &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4    &kp N5                  &kp NUMBER_6           &kp N9      &kp N8  &kp N7  &mt N0 BACKSPACE
@@ -18,7 +34,7 @@
 
         layer_1 {
             bindings = <
-&kp ESCAPE  &to 0   &to 1   &to 2   &trans            &to 0            &trans             &trans          &kp MINUS         &kp EQUAL
+&kp ESCAPE  &tog 0  &tog 1  &tog 2  &trans            &to 0            &trans             &trans          &kp MINUS         &kp EQUAL
 &kp GRAVE   &trans  &trans  &trans  &trans            &trans           &kp RIGHT_BRACKET  &kp BACKSLASH   &kp LEFT_BRACKET  &kp P
 &trans      &trans  &trans  &trans  &trans            &trans           &kp UP_ARROW       &trans          &trans            &kp ENTER
 &trans      &trans  &trans  &trans  &trans            &trans           &kp DOWN           &kp LEFT_ARROW  &trans            &kp RIGHT
@@ -30,19 +46,9 @@
             bindings = <
 &lt 0 NUMBER_1    &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp N5                  &kp NUMBER_6          &kp N9      &kp N8     &kp N7  &mt N0 BACKSPACE
 &kp Q             &kp W         &kp E         &kp R         &kp T                   &kp U                 &kp O       &kp Y      &kp U   &kp P
-&lt 3 A           &kp S         &kp D         &kp F         &kp G                   &kp H                 &kp L       &kp K      &kp J   &kp ENTER
-&mt LEFT_SHIFT Z  &kp X         &kp C         &kp V         &mt LCMD B              &kp N                 &kp PERIOD  &kp COMMA  &kp M   &kp SLASH
+&lt 1 A           &kp S         &kp D         &kp F         &kp G                   &kp H                 &kp L       &kp K      &kp J   &kp ENTER
+&mt LEFT_SHIFT Z  &kp X         &mt LCTRL C   &kp V         &mt LCMD B              &kp N                 &kp PERIOD  &kp COMMA  &kp M   &kp SLASH
                                                             &mt LEFT_SHIFT SPACE    &mt LEFT_SHIFT SPACE
-            >;
-        };
-
-        layer_3 {
-            bindings = <
-&to 0    &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
-&trans   &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
-&lt 3 A  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
-&trans   &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
-                                 &trans    &trans
             >;
         };
     };
