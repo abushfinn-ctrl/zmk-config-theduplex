@@ -6,14 +6,14 @@
         compatible = "zmk,combos";
 
         layer {
-            bindings = <&to 2>;
-            key-positions = <40 0>;
+            bindings = <&tog 2>;
+            key-positions = <0 9>;
             layers = <0>;
         };
 
         layer0 {
             bindings = <&tog 0>;
-            key-positions = <40 0>;
+            key-positions = <40 41>;
             layers = <2>;
         };
     };
