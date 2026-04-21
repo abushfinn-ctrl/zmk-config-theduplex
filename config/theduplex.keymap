@@ -18,7 +18,7 @@
 
         layer_1 {
             bindings = <
-&kp ESCAPE  &to 0   &to 1   &to 2   &trans            &trans           &trans             &trans          &kp MINUS         &kp EQUAL
+&kp ESCAPE  &to 0   &to 1   &to 2   &trans            &to 0            &trans             &trans          &kp MINUS         &kp EQUAL
 &kp GRAVE   &trans  &trans  &trans  &trans            &trans           &kp RIGHT_BRACKET  &kp BACKSLASH   &kp LEFT_BRACKET  &kp P
 &trans      &trans  &trans  &trans  &trans            &trans           &kp UP_ARROW       &trans          &trans            &kp ENTER
 &trans      &trans  &trans  &trans  &trans            &trans           &kp DOWN           &kp LEFT_ARROW  &trans            &kp RIGHT
